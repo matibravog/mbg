@@ -18,20 +18,6 @@ body{
     width: 100%;
     height: 80px;
 }
-.break-one{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    width: 100%;
-    height: 60px;
-    background-color: rgb(0, 66, 94);
-}
-.break-text{
-    font-size: 1.4rem;
-    color: white;
-}
-
 
 
 
@@ -58,21 +44,27 @@ body{
     width: 40px;
     height: auto;
 }
-.header-menu-details{
+ .header-menu-details{
+     display: none;
+}
+/*  flex-direction: column;
     position: absolute;
-    display: none;
-    flex-direction: column;
-    width: auto;
-    right: 5px;
+    width: 950%;
+    height: 60vh;
+    right: -40px;
     text-align: end;
     list-style: none;
 }
 .header-menu-details a{
     text-decoration: none;
     color: white;
+    font-size: 3rem;
 } 
 .header-menu-details li{
+    display: flex;
+    justify-content: center;
     list-style: none;
+    text-align: center;
 }
 .header-menu:hover ul, ul:hover{
     background-color: rgb(0, 66, 94);
@@ -82,7 +74,8 @@ body{
 }
 .header-menu-details a:hover {
     text-decoration: underline;
-}
+} */
+
 
 
 
@@ -92,13 +85,13 @@ body{
     justify-content: center;
     width: 100%;
     height: auto;
-    background-image: url('../files/home/smoke-2.png');
-    background-size: 460%;
-    background-repeat: no-repeat;
+    background: linear-gradient( black, black,rgb(0, 66, 94), rgb(0, 66, 94));
+    /* background-image: url('../files/home/smoke-2.png');
+    background-size: 465%;
+    background-repeat: no-repeat; */
 }
 .title{ 
-    width: 75%;
-    color: white;
+    width: 80%;
     margin: 35px auto 20px ;
     text-align: center;
 }
@@ -108,15 +101,12 @@ body{
 }
 .title h1{
     margin-top: 5px;
-    font-size: 2rem;
-    color: white;
+    font-size: 2.2rem;
 }
 .info-button{ 
-    width: 100px;
-    height: 25px;
+    width: 110px;
+    height: 35px;
     margin: 15px auto 50px;
-    font-size: 1.2rem;
-    color: white;
     font-weight: bold;
     border: 1px solid white;
     border-radius: 5px;
@@ -134,23 +124,28 @@ body{
     color: #A3A3A3;
 }
 
-.portafolio-slide{
+
+.portafolio-container{
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
     width: auto;
     height: auto;
 }
-.portafolio-slide-item {
+.portafolio-item {
     display: flex;
-    margin: 2% 3%;
+    margin: 2% 4%;
+
+    /* background-color: black; */
+    border-radius: 10px;
 
     width: 35%;
     height: auto;
 }
-.portafolio-slide-item img{
+.portafolio-item img{
     width: 100%;
     height: 100%;
+    /* opacity: 0.5; */
 
     object-fit: cover;
     cursor: pointer;
@@ -158,60 +153,76 @@ body{
     border-radius: 10px;
     box-shadow: 0 0 10px 5px rgba(240, 240, 240, 0.5);
 }
-.slide-item-text{
+.item-icon{
     position: absolute;
-    transform: translate(17px, 5px);
-    color: white;
-    font-size: 1rem;
-}
-.slide-item-icon{
-    position: absolute;
-    width: 8px;
-    height: 8px;
-    transform: translate(5px, 7px);
-    opacity: 0.7;
-    border: 0.5px solid white;
+    width: 6px;
+    height: 6px;
+    transform: translate(7px, 7px);
+    border: 0.px solid white;
     border-radius: 50px;
-    background-color: white;
+    background-color: rgb(0, 66, 94);
     /* background-image: url('../Images/portafolio/camara.png'); */
 }
+.item-text{
+    position: absolute;
+    transform: translate(17px, 4px);
+    font-size: 1rem;
+}
+.item-description{
+    display: none;
+}
 
 
-.skills{
+
+
+.break{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 70px;
+    background: linear-gradient(rgb(0, 66, 94), black);
+}
+.break-text{
+    font-size: 1.6rem;
+    transform: translate(0, -6px);
+}
+
+
+
+.video{
     width: 80%;
     height: auto;
     margin: 0 auto;
 }
-.skills-title{
+.video-title{
     text-align: center; 
     margin: 20px 0;
+    color: #A3A3A3;
 }
-.skills-container{
+.video-container{
     display: flex;
-    flex-direction: column; 
-    width: 100%;
-}
-.skill-item-text{
-    margin: 10px 0 30px;
+    flex-direction: column;
+    text-align: center;
 }
 .videoclip{
     width: 100%;
+    max-width: 325px;
     height: auto;
-    border: white 0.01px solid;
-    border-radius: 10px;
+}
+.video-item-text{
+    margin: 10px 0 30px;
 }
 
 
 
 .me{
-    display: flex;
     width: 100%;
     height: auto;
     margin: 50px 0;
 }
 .me h2{
     text-align: center;
-    color: white;
     font-size: 3rem;
     margin-bottom: 20px;
 }
@@ -227,10 +238,37 @@ body{
 
 
 
+.marcas{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 100px;
+    margin-bottom: 20px;
+    background-color: white;
+}
+.marcas-container{
+    width: 100%;
+    height: 95%;
+    background-color: rgb(0, 66, 94);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.marcas-item{
+    opacity: 0.5;
+    width: 50px;
+    height: 50px;
+    margin: 10px;
+    border-radius: 50%;
+    background-color: white;
+}
+
+
+
+
 footer{
     display: flex;
     flex-direction: column;
-    align-items: center;
     width: 100%;
     height: auto;
     background-color: rgb(0, 66, 94);
@@ -242,92 +280,84 @@ footer{
     align-items: center;
 }
 .redes p{
-    color: white;
-    font-size: 1.2rem;
+    font-size: 1.4rem;
     margin: 25px 0 10px;
 }
 .redes img{
-    width: 50px;
-    height: 50px;
+    width: 80px;
+    height: 80px;
+    cursor: pointer;
 }
 
-footer .contact {
+
+.contact {
     display: flex;
     flex-direction: column;
-    justify-content: center;
     text-align: center;
-    color: white;
     margin: 25px auto 0;
+    width: 80%;
 }
-footer .contact h2{
-    color: white;
+.contact h2{
     font-size: 3rem;
-    margin-bottom: 15px;
+    margin-bottom: 10px;
 }
-footer .contact-data{
+.contact-data{
     display: flex;
     flex-direction: column;
 }
-footer .label{
+.label{
     display: flex;
     flex-direction: column;
     align-self: center;
 }
-footer .label span{
+.label span{
     margin-bottom: 10px;
 }
-footer .label input{
-    width: 215px;
+
+.label input{
+    width: 225px;
     height: 30px;
-    margin-bottom: 15px;
+    margin-bottom: 10px;
     padding-left: 10px;
     outline: none;
     color: black;
     border-radius: 10px;
     border: 2px solid black;
-    background-color: white;
+    box-shadow: 0 0 5px 0.1px white;
 }
-footer #label-message{
-    display: flex;
+#label-message{
     align-self: center;
-    width: 215px;
-    height: 100px;
-
+    height: 120px;
 }
-footer .contact-button{ 
+.contact-button{ 
     width: 100px;
     height: 30px;
     margin: 10px auto 15px;
     border: 1px solid white;
     border-radius: 5px;
-    font-size: 1.2rem;
     color: white;
     font-weight: bold;
-    font-family: 'Lato', sans-serif;
     cursor: pointer;
     outline: none;
     background-color: rgb(26, 26, 26);
-    box-shadow: 0px 0px 10px 0.02px white;
+    box-shadow: 0px 0px 10px 1px white;
 }
-footer .info-button a{
-    color: white;
-    text-decoration: none;
+.contact p{
+    font-size: 1.2rem;
 }
-footer .contact p{
-    font-size: 1.1rem;
-}
+
+
 
 .logo{
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin: 40px 0;
+    margin: 25px 0;
 }
 .logo img{
     width: 200px;
     height: auto;
 }
 .logo p{
-    color: white;
     font-size: 1.2rem;
 }

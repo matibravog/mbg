@@ -1,61 +1,55 @@
 .header{
-    justify-content: space-between;
     padding: 0 10%;
+    opacity: 0.9;
+}
+.header figure{
+    width: 50%;
 }
 .header-menu{
-    position: relative;
-    display: flex;
-    align-items: center;
-    transform: translate(0, 10px);
     width: 50%;
-    height: auto;
+    position: relative;
+    transform: translate(0, 0px);
 }
 .header-menu img{
     display: none;
 }
 .header-menu-details{
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    width: 300px;
+    justify-content: flex-end;
+}
+.header-menu-details li{
+    list-style: none;
 }
 .header-menu-details a{
-    transition: 500ms;
+    margin: 20px;
+    color: white;
+    text-decoration: none;
 }
 .header-menu-details a:hover{
-    color: rgb(0, 204, 255);
-    text-decoration: none;
-    font-size: 1.8rem;
-}
-.header-menu:hover ul, ul:hover{
-    flex-direction: row;
+    color: cyan;
 }
 
 
 
 
-.portafolio{
-    background-size: 110%;
-}
 .title{
-    margin: 75px auto 20px;
+    margin: 60px auto;
 }
 .title h3{
-    font-size: 3rem;
+    font-size: 2.5rem;
 }
 .title h1{
-    font-size: 5.5rem;
+    font-size: 5rem;
 }
 .info-button{ 
-    width: 200px;
-    height: 50px;
-    margin: 50px auto 50px;
+    width: 170px;
+    height: 45px;
     font-size: 2rem;
-    transition: 450ms;
+    transition: 850ms;
+    margin-bottom: 60px;
 }
 .info-button:hover{
     transform: scale(1.2);
-    transition: 450ms;
     background-color: rgb(26, 26, 26);
     color: rgb(0, 66, 94);
 }
@@ -63,146 +57,51 @@
     font-size: 2rem;
 }
 
-.portafolio-slide{
+
+
+.portafolio-container{
     display: flex;
     flex-wrap: nowrap;
-    justify-content: center;
-    align-items: center;
-    width: auto;
-    height: auto;
-    margin-bottom: 100px;
+    margin-bottom: 50px;
 }
-.portafolio-slide-item {
-    display: flex;
+.portafolio-item {
     align-items: center;
-    width: 20%;
-    height: 100%;
-    margin: 0.5% 1.5rem;
+    margin: 0 2%;
     transition: 450ms;
 }
-.portafolio-slide-item img{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-    width: 100%;
-    height: 100%;
-    
-    min-width: 75px;
-    min-height: 250px;
-
-    max-width: 175px;
-    max-height: 260px;
-
-    object-fit: cover;
-    cursor: pointer;
-    border: 1px solid white;
-    border-radius: 10px;
-    box-shadow: 0 0 10px 5px rgba(240, 240, 240, 0.5);
+.portafolio-item img{
+    max-height: 250px;
 }
-.portafolio-slide:hover .portafolio-slide-item{
+
+.item-text {
+    transform: translate(-40px, -110px);
+    font-size: 1.2rem;
+}
+.item-icon {
+    transform: translate(-70px, -110px);
+}
+.item-description{
+    position: absolute;
+    font-size: 1.2rem;
+    transform: translate(0px, 100px);
+    transition: 650ms;
+}
+
+.portafolio-container:hover .portafolio-item{
     opacity: 50%;
 }
-.portafolio-slide:hover .portafolio-slide-item:hover{
+.portafolio-container:hover .portafolio-item:hover{
     opacity: 1;
     transform: scale(1.2);
     transition: 450ms;
 }
-.portafolio-slide-item:hover  .slide-item-text{
+
+.portafolio-item:hover  .item-description{
     display: flex;
-    transition: 450ms;
-}
-.portafolio-slide-item:hover  .slide-item-icon{
-    display: flex;
-    transition: 450ms;
+    transition: 650ms;
 }
 
-.slide-item-text {
-    transform: translate(-40px, -110px);
-    font-size: 1.2rem;
-}
-.slide-item-icon {
-    transform: translate(-70px, -110px);
-}
-
-.videoclip {
-    width: 40%;
-    height: 77%;
-    opacity: 0.8;
-}
-.skills{
-    width: 100%;
-    height: auto;
-    display: flex;
-}
-.skills-container{
-    display: flex;
-    justify-content: center;
-    flex-wrap: nowrap;
-}
-.skill-item{
-    width: 40%;
-    height: 300px;
-    border: white 1px solid;
-    display: flex;
-}
-.videoclip{
-    width: 100%;
-    height: 100%;
-    opacity: 0.8;
-}
-.videoclip:hover{
-    opacity: 1;
-}
-
-
-.me-image img{
-    width: 30%;
-    height: auto;
-}
-.me-details{
-    width: 50%;
-}
-
-
-
-.contact-data{
-    margin-right: 20px;
-}
-.contact-form{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    width: 80%;
-    margin-bottom: 50px;
-}
-.optional-text{
-    display: flex;
-    flex-direction: column;
-}
-.optional-text span{
-    margin-bottom: 0;
-}
-#label-message{
-    width: 300px;
-    height: 125px;
-}
-
-
-
-
-footer{
-    height: auto;
-}
 .footer-container{
     display: flex;
-    justify-content: space-between;
-}
-.redes img{
-    width: 80px;
-    height: auto;
-}
-footer .logo img{
-    width: 180px;
-    height: AUTO;
+    justify-content: space-evenly;
 }
