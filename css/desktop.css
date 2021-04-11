@@ -31,7 +31,9 @@
 
 
 
-
+.portafolio{
+    height: 100vh;
+}
 .title{
     margin: 60px auto;
 }
