@@ -32,16 +32,20 @@
 
 
 .portafolio{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
     height: 100vh;
 }
 .title{
-    margin: 60px auto;
+    transform: translate(0, -50px);
 }
 .title h3{
     font-size: 2.5rem;
 }
 .title h1{
-    font-size: 5rem;
+    font-size: 5.2rem;
 }
 .info-button{ 
     width: 170px;
@@ -68,11 +72,12 @@
 }
 .portafolio-item {
     align-items: center;
-    margin: 0 2%;
+    margin: 0 1%;
     transition: 450ms;
 }
 .portafolio-item img{
-    max-height: 250px;
+    width: 210px;
+    height: 300px;
 }
 
 .item-text {
@@ -97,13 +102,44 @@
     transform: scale(1.2);
     transition: 450ms;
 }
-
 .portafolio-item:hover  .item-description{
     display: flex;
     transition: 650ms;
 }
 
+
+
+
+.video{
+    width: 70%;
+}
+.video-container{
+    margin: 0 auto;
+    width: 90%;
+}
+
+
+
+
 .footer-container{
     display: flex;
     justify-content: space-evenly;
+    margin: 0 auto;
+}
+.redes{
+    width: 50%;
+}
+.redes img{
+    width: 115px;
+    height: 115px;
+}
+.redes{
+    width:40%;
+}
+.contact{
+    width: 70%;
+}
+.contact-form{
+    margin: 0 auto;
+    width: 650px;
 }
