@@ -1,7 +1,7 @@
-/* :root{
-    --blue: rgb(0, 66, 94);
+:root{
+    --blue: #00425e;
     --gray: #A3A3A3;
-} */
+}
 *{
     box-sizing: border-box;
     margin: 0;
@@ -90,9 +90,9 @@ body{
     width: 100%;
     height: auto;
     background: linear-gradient( black, black,rgb(0, 66, 94), rgb(0, 66, 94));
-    /* background-image: url('../files/home/smoke-2.png');
-    background-size: 465%;
-    background-repeat: no-repeat; */
+    /* background-image: url('../files/home/smoke-2.png'); */
+    /* background-size: 465%; */
+    /* background-repeat: no-repeat; */
 }
 .title{ 
     width: 80%;
