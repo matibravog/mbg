@@ -3,13 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Construye el futuro de tu marca a traves de contenido y estrategia digital.">
-    <title>Matias bravo</title>
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link rel="icon" type="image/png" href="./files/header/icono-pestaña.png">
+    <meta name="description" content="Creativo & Curioso.">
+    <title>Matias bravo | Portafolio</title>
+    <link rel="icon" type="png" href="./files/header/favicon.png">
     <link rel="StyleSheet" href="./style.css" > 
-    <link rel="StyleSheet" href="./css/tablet.css"  media="(min-width: 600px)">
-    <link rel="StyleSheet" href="./css/desktop.css" media="(min-width: 1280px)">
+    <link rel="StyleSheet" href="./css/tablet.css"  media="(min-width: 426px)">
+    <link rel="StyleSheet" href="./css/desktop.css" media="(min-width: 1024px)">
 </head>
 <body>
     <header class="header" id="header">
@@ -19,162 +18,117 @@
             </a>
         </figure>
         <div class="header-menu">
-            <img class="header-menu-icon" src="./files/header/menu-burguer.png" alt="burguer menu">
+            <img class="header-menu-icon" onclick="mostrarmenu()" src="./files/header/menu-burguer.png">
             <ul id="header-meun-details" class="header-menu-details">
-                <li><a href="./files/header/portafolio.html">Portafolio</a></li>
-                <li><a href="./files/header/me.html">Sobre mi</a></li>
-                <li><a href="./files/header/contact.html">Contacto</a></li>
+                <!-- <li><a href="./files/header/portafolio.html">Portafolio</a></li> -->
+                <li><a href="./pages/me/me.html">Sobre mi</a></li>
+                <li><a href="./pages/contact/contact.html">Contacto</a></li>
             </ul>
         </div>
     </header>
-    <section class="space-blank" id="home"></section>
     
+    <section class="space-blank"></section>
+
     <main>
         <section class="portafolio" id="portafolio">
+
             <div class="title">
                 <h3>Matias Bravo</h2>
                 <h1><strong>Fotografia</strong> & Contenido <strong>Audiovisual</strong></h1>
-                <button class="info-button"><a href="./files/pages/verPortafolio.html">Ver Servicios</a></button>
-                <h2>Sesiones</h2>
+                <button class="info-button"><a href="./pages/portafolio/verPortafolio.html">Ver portafolio</a></button>
             </div>
+
             <div class="portafolio-container">
-                <article class="portafolio-item">
-                    <a href="./files/pages/dels/dels.html"><img src="./files/pages/dels/dels.jpg" alt=""></a>
-                    <div class="item-icon"></div>
-                    <p class="item-text">Dels</p>
-                    <div class="item-icon-description"></div>
-                    <p class="item-description"> 20 fotos</p>
-                </article>
-                <article class="portafolio-item">
-                    <a href="./files/pages/katy/katy.html"><img src="./files/pages/katy/katy.jpg" alt=""></a>
-                    <div class="item-icon"></div>
-                    <p class="item-text">Katy E.</p>
-                    <div class="item-icon-description"></div>
-                    <p class="item-description"> 15 fotos</p>
-                </article>
-                <article target="blank" class="portafolio-item">
-                    <a target="blank" href="./files/pages/marshall/marshall.html"><img src="./files/pages/marshall/marshall.jpg" alt=""></a>
-                    <div class="item-icon"></div>
-                    <p class="item-text">Marshall</p>
-                    <div class="item-icon-description"></div>
-                    <p class="item-description"> 8 fotos</p>
-                </article>
-                <article class="portafolio-item">
-                    <a href="./files/pages/polytune/polytune.html"><img src="./files/pages/polytune/polytune.jpg" alt=""></a>
-                    <div class="item-icon"></div>
-                    <p class="item-text">Polytune</p>
-                    <div class="item-icon-description"></div>
-                    <p class="item-description"> 12 fotos</p>
-                </article>
-                <article class="portafolio-item">
-                    <a href="./files/pages/pasaje-8/pasaje-8.html"><img src="./files/pages/pasaje-8/pasaje-8.jpg" alt=""></a>
-                    <div class="item-icon"></div>
-                    <p class="item-text">Pasaje 8</p>
-                    <div class="item-icon-description"></div>
-                    <p class="item-description"> 32 fotos</p>
-                </article>
-                <article class="portafolio-item">
-                    <a href="./files/pages/pegotes/pegotes.html"><img src="./files/pages/pegotes/pegotes.jpg" alt=""></a>
-                    <div class="item-icon"></div>
-                    <p class="item-text">Pegotes</p>
-                    <div class="item-icon-description"></div>
-                    <p class="item-description"> 12 fotos</p>
-                    </article>
+
+                <div class="section-container">                    
+                    <h2 class="video-title">Video</h2>
+                    <div class="video-container">
+                        <article class="portafolio-item left-item video">
+                            <a href="./pages/pasaje-8/pasaje-8.html"><img src="./pages/pasaje-8/pasaje-8.jpg" alt=""></a>
+                            <div class="item-icon"></div>
+                            <p class="item-text">Pasaje 8</p>
+                            <div class="item-icon-description"></div>
+                            <p class="item-description"> 32 fotos</p>
+                        </article>
+                        
+                        <article class="portafolio-item right-item video">
+                            <a href="./pages/pegotes/pegotes.html"><img src="./pages/pegotes/pegotes.jpg" alt=""></a>
+                            <div class="item-icon"></div>
+                            <p class="item-text">Pegotes</p>
+                            <div class="item-icon-description"></div>
+                            <p class="item-description"> 12 fotos</p>
+                        </article>
+                    </div>
+                </div>
+
+                <div class="section-container">
+                    <h2 class="producto-title">Producto</h2>
+                    <div class="video-container">
+                        <article class="portafolio-item left-item producto">
+                            <a target="blank" href="./pages/marshall/marshall.html"><img src="./pages/marshall/marshall.jpg" alt=""></a>
+                            <div class="item-icon"></div>
+                            <p class="item-text">Marshall</p>
+                            <div class="item-icon-description"></div>
+                            <p class="item-description"> 8 fotos</p>
+                        </article>
+                        <article class="portafolio-item right-item producto" >
+                            <a href="./pages/polytune/polytune.html"><img src="./pages/polytune/polytune.jpg" alt=""></a>
+                            <div class="item-icon"></div>
+                            <p class="item-text">Polytune</p>
+                            <div class="item-icon-description"></div>
+                            <p class="item-description"> 12 fotos</p>
+                        </article>
+                    </div>
+                </div>
+
+                <div class="section-container">
+                    <h2 class="retrato-title">Retrato</h2>
+                    <div class="video-container">
+                        <article class="portafolio-item left-item retrato">
+                            <a href="./pages/dels/dels.html"><img src="./pages/dels/dels.jpg" alt=""></a>
+                            <div class="item-icon"></div>
+                            <p class="item-text">Dels</p>
+                            <div class="item-icon-description"></div>
+                            <p class="item-description"> 20 fotos</p>
+                        </article>
+                        <article class="portafolio-item right-item retrato">
+                            <a href="./pages/katy/katy.html"><img src="./pages/katy/katy.jpg" alt=""></a>
+                            <div class="item-icon"></div>
+                            <p class="item-text">Katy E.</p>
+                            <div class="item-icon-description"></div>
+                            <p class="item-description"> 15 fotos</p>
+                        </article>
+                    </div>
+                </div>
+
+
             </div>
         </section>
 
             <div class="break"><P class="break-text">"Crea, Construye & Conecta..."</P></div>
-        
-        <div class="page-container">
-            <section class="video">
-                <h2 class="video-title">Videos</h2>
-                <section class="video-container">
-                    <article class="video-item">
-                        <iframe class="videoclip" src="https://www.youtube.com/embed/MofT5ZeJbfg" frameborder="0" ></iframe>
-                        <P class="video-item-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt ducimus reprehenderit laboriosam </P>
-                    </article>
-                    <article class="video-item">
-                        <iframe class="videoclip" src="https://www.youtube.com/embed/JVee8mmpxjQ" frameborder="0" ></iframe>
-                        <P class="video-item-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt ducimus reprehenderit laboriosam </P>
-                    </article>
-                    <article class="video-item">
-                        <iframe class="videoclip" src="https://www.youtube.com/embed/Ll89ZmMVbBA" frameborder="0" ></iframe>
-                        <P class="video-item-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt ducimus reprehenderit laboriosam </P>
-                    </article>
-                    <article class="video-item">
-                        <iframe class="videoclip" src="https://www.youtube.com/embed/YiuulbkaG-g" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                        <P class="video-item-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt ducimus reprehenderit laboriosam </P>
-                    </article>
-                    <article class="video-item">
-                        <iframe class="videoclip" src="https://www.youtube.com/embed/VaTYEfqK1iE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                        <P class="video-item-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt ducimus reprehenderit laboriosam </P>
-                    </article>
-                    <article class="video-item">
-                        <iframe class="videoclip" src="https://www.youtube.com/embed/Lg6e0xZhNtE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                        <P class="video-item-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt ducimus reprehenderit laboriosam </P>
-                    </article>
-                </section>
-            </section>
-            
-                <div class="break"><P class="break-text">Conoceme mas y revisa mi experiencia.</P></div>
+    
 
-            <section class="me" id="me">
-                <div class="me-container">
-                    <h2>Sobre mi</h2>
-                    <article class="me-details">
-                        <p class="me-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum fugiat nisi sint ipsa ex, aut asperiores! Dolore nisi, beatae dolorum, sunt nisi sint ipsa ex, aut asperiores! Dolore nisi, beatae dolorum, sunt incidunt, corporis consequatur iusto unde voluptatem debitisnisi sint ipsa ex, aut asperiores! Dolore nisi, beatae dolorum, sunt  qui natus.</p>
-                        <p class="me-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum fugiat nisi sint ipsa ex, aut asperiores! Dolore nisi, beatae dolorum, sunt nisi sint ipsa ex, aut asperiores! Dolore nisi, beatae dolorum, sunt incidunt, corporis consequatur iusto unde voluptatem debitisnisi sint ipsa ex, aut asperiores! Dolore nisi, beatae dolorum, sunt  qui natus.</p>
-                        <p class="me-frase">"Lorem ipsum dolor sit consectetur"</p>
-                    </article>
-                </div>
-            </section>
-
-            <section class="contact" id="contact">
-                <h2>Contacto</h2>
-
-                <form class="contact-form">
-                    <div class="contact-data">
-                        <label class="label data" for="nombre">
-                            <span>Tu nombre</span> 
-                            <input type="text" id="nombre" name="nombre" placeholder="Matias">
-                        </label>
-                        <label class="label data" for="email">
-                            <span>Tu email</span>
-                            <input type="email" id="email" name="email" placeholder="contacto@gmail.com">
-                        </label>
-                    </div>
-
-                    <div class="contact-message">
-                        <label class="label" for="text">
-                            <span>¿Que necesitas?</span> 
-                            <input id="label-message" type="text" id="text" name="text" placeholder="">
-                        </label>
-                    </div>
-                </form>
-
-                <button class="contact-button" id="enviar" >Enviar</button>
-                <p>Tambien puedes enviarme un Email a <br><strong>Contacto@matiasbravo.com</strong></p>
-            </section>
-
-        </div>
+    
     </main>
+
     <footer class="footer">
         <div class="footer-container">
             <section class="redes">
-                <p>sigueme en:</p>
+                <p>Encuentrame en:</p>
                 <figure>
                     <a Target="_blank" href="https://www.instagram.com/mati.mbg/"><img src="./files/footer/instagram.png" alt="rrss"></a>
                     <a Target="_blank" href="https://twitter.com/Matibravog"><img src="./files/footer/twitter.png" alt="rrss"></a>
                     <a Target="_blank" href="https://www.linkedin.com/in/matias-bravo-ba50441a6/"><img src="./files/footer/linkedin.png" alt="rrss"></a>
-                    <!-- <img src="./files/footer/pinterest.png" alt="rrss"> -->
                 </figure>
             </section>
 
             <div class="logo">
-            <img src="./files/footer/logo-footer.png" alt="logo">
-            <p>Concepcion, Chile.</p>
+                <img src="./files/footer/logo-footer.png" alt="logo">
+                <p>Concepcion, Chile.</p>
+            </div>
         </div>
     </footer>
-    <script src="./files/index.js"></script>
+
+    <script src="./index.js"></script>
 </body>
 </html>
