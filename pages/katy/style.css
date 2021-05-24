@@ -1,3 +1,7 @@
+:root{
+    --blue: #00425e;
+    --gray: #A3A3A3;
+}
 *{
     box-sizing: border-box;
     margin: 0;
@@ -6,18 +10,18 @@
 html{
     font-size: 62.5%;
     scroll-behavior: smooth;  
+    min-width: 320px;
 }
 body{
+    color: white;
     font-size: 1.6rem;
-    background-color: black;
     font-family: 'Lato', sans-serif;
-    scroll-behavior: smooth;
+    background-color: black;
 }
 .space-blank{
     width: 100%;
     height: 80px;
 }
-
 
 
 
@@ -28,45 +32,26 @@ body{
     justify-content: center;
     align-items: center;
     width: 100%;
-    min-width: 320px;
     height: 80px;
-    min-height: 80px;
+    opacity: 0.9;
     background-color: rgb(0, 66, 94);
 }
 .header-logo{
-    width: 130px;
+    width: 125px;
     height: auto;
 }
 .header-menu{
     position: absolute;
     transform: translate(40vw, 0);
+    cursor: pointer;
 }
 .header-menu-icon{
     width: 40px;
     height: auto;
-    cursor: pointer;
 }
-.header-menu-details{
-    display: none;
-    position: absolute;
-    text-align: end;
-    list-style: none;
-    right: 1px;
+ .header-menu-details{
+     display: none;
 }
-.header-menu-details a{
-    text-decoration: none;
-    color: white;
-} 
-.header-menu-details li{
-    margin-bottom: 5px;
-} 
-/* .header-menu:hover ul, ul:hover{
-    display: flex;
-    flex-direction: column;
-}
-.header-menu-details a:hover {
-    text-decoration: underline;
-} */
 
 
 
@@ -75,80 +60,76 @@ body{
     flex-direction: column;
     justify-content: center;
     width: 100%;
-    min-width: 320px;
     height: auto;
-    background-image: url('../Images/smoke-2.png');
-    background-repeat: no-repeat;
-    background-size: 430%;
+    background: linear-gradient( black, black,rgb(0, 66, 94), rgb(0, 66, 94));
 }
-.title{
-    position: relative;
-    width: 95%;
-    margin: 45px auto 20px ;
+.title{ 
+    width: 80%;
+    margin: 35px auto 20px ;
     text-align: center;
-    color: rgb(180, 180, 180);
+}
+.title h3{
+    color: #A3A3A3;
+    font-size: 2rem;
 }
 .title h1{
     margin-top: 5px;
-    font-size: 2rem;
-    color: white;
-}
-.title h2{
-    margin-top: 40px;
-    font-size: 2rem;
-    color: #A3A3A3;
-}
-.title h3{
-    font-size: 1.8rem;
+    font-size: 2.4rem;
 }
 .info-button{ 
-    width: 100px;
-    height: 25px;
-    margin: 10px auto 0;
+    width: 110px;
+    height: 35px;
+    margin: 15px auto;
+    font-weight: bold;
     border: 1px solid white;
     border-radius: 5px;
-    font-size: 1.2rem;
-    color: white;
-    font-weight: bold;
-    font-family: 'Lato', sans-serif;
     cursor: pointer;
     outline: none;
     background-color: rgb(0, 66, 94);
     box-shadow: 0px 0px 10px 0.02px white;
 }
 .info-button a{
+    font-size: 1.5rem;
     color: white;
     text-decoration: none;
 }
 
-.portafolio-slide{
+
+.portafolio-container{
     display: flex;
+    flex-direction: column;
     justify-content: center;
-    flex-wrap: wrap;
     width: auto;
     height: auto;
 }
-.portafolio-slide-item {
+.section-container{
     display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 35%;
-    height: 100%;
-    margin: 2% 4%;
+    flex-direction: column;
+    text-align: center;
+    margin-bottom: 20px;
 }
-.portafolio-slide-item img{
+.section-container h2{
+    font-size: 1.5rem;
+    width: 20px;
+    display: flex;
+    align-self: center;
+    justify-content: center;    
+    border-bottom: 1px solid white;
+}
+.video-container{
     display: flex;
     justify-content: center;
-    align-items: center;
-
+}
+.portafolio-item {
+    display: flex;
+    margin: 4% 4%;
+    border-radius: 10px;
+    width: 35%;
+    height: auto;
+}
+.portafolio-item img{
     width: 100%;
     height: 100%;
-    
-    min-width: 75px;
-    min-height: 100px;
-
-    max-width: 200px;
-    max-height: 300px;
 
     object-fit: cover;
     cursor: pointer;
@@ -156,168 +137,71 @@ body{
     border-radius: 10px;
     box-shadow: 0 0 10px 5px rgba(240, 240, 240, 0.5);
 }
-
-.slide-item-text{
+.item-icon{
     display: none;
-    position: absolute;
-    transform: translate(-50px, -130px);
-    color: white;
-    font-size: 1rem;
+    /* position: absolute;
+    width: 6px;
+    height: 6px;
+    transform: translate(7px, 7px);
+    border: 1px solid white;
+    border-radius: 50px;
+    background-color: rgb(0, 66, 94);
+    background-image: url('../Images/portafolio/camara.png'); */
 }
-.slide-item-icon{
+.item-text{
     display: none;
-    position: absolute;
-    width: 10px;
-    height: 10px;
-    transform: translate(-80px, -130px);
-    background-color: white;
-    background-image: url('../Images/portafolio/camara.png');
+    /* position: absolute;
+    transform: translate(17px, 4px);
+    font-size: 1rem; */
+}
+.item-description{
+    display: none;
 }
 
 
 
 
-
-.break-one{
+.break{
     display: flex;
     justify-content: center;
     align-items: center;
-    text-align: center;
     width: 100%;
-    height: 60px;
-    background-color: rgb(0, 66, 94);
+    height: 70px;
+    background: linear-gradient(rgb(0, 66, 94), black);
 }
 .break-text{
-    font-size: 1.4rem;
-    color: white;
+    font-size: 1.6rem;
+    transform: translate(0, -6px);
 }
-.skills{
-    width: 100%;
-    height: auto;
-}
-.skills-container{
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-}
-.skill-item{
-    width: 100%;
-    height: 200px;
-    border: white 1px solid;
-    background-color: #555555;
-}
-.videoclip{
-    width: 100%;
-    height: 100%;
-    opacity: 0.8;
-}
-.videoclip:hover{
-    opacity: 1;
-}
-.break-two{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    width: 100%;
-    height: 60px;
-    background-color: rgb(0, 66, 94);
-}
+
+
+
+
+
+
 .me{
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    width: 100%;
-    height: auto;
-    margin-top: 50px;
-    margin-bottom: 100px;
+    width: 80%;
+    margin: 50px auto;
+}
+.me-container{
+    box-shadow: 0 0 10px 5px rgba(240, 240, 240, 0.5);
+    background: rgba(0, 66, 94, 0.486);
+    border: 1px solid white;
+    border-radius: 10px;
 }
 .me h2{
-    position: relative;
     text-align: center;
     font-size: 3rem;
-    color: white;
-    margin-bottom: 20px;
+    margin: 10px;
 }
 .me-details{
-    color: white;
-    width: 80%;
+    width: 85%;
     margin: 0 auto;
-}
-.me-description{
-    margin-bottom: 30px;
 }
 .me-frase{
-    font-weight: bold;
-}
-
-
-.contact {
-    display: flex;
-    flex-direction: column;
-    width: 90%;
-    margin: 0 auto;
+    margin: 20px 0 15px;
     text-align: center;
-    color: white;
-    margin-bottom: 50px;
-}
-.contact h2{
-    text-align: center;
-    color: white;
-    font-size: 3rem;
-    margin-bottom: 50px;
-}
-.contact-form{
-    width: 300px;
-    margin: 0 auto;
-}
-.contact-data{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    margin-bottom: 15px;
-}
-.label{
-    display: flex;
-    align-self: center;
-    flex-direction: column;
-}
-.label span{
-    margin-bottom: 10px;
-    align-self: left;
-}
-.label input{
-    width: 200px;
-    height: 30px;
-    padding-left: 10px;
-    border: 1px solid white;
-    border-radius: 10px;
-    background-color: rgba(255, 255, 255, 0.1);
-    margin-bottom: 25px;
-    outline: none;
-    color: white;
-}
-#label-message{
-    height: 75px;
-}
-.contact-button{ 
-    /* transform: translate(50%); */
-    margin: 0 auto;
-    color: white;
-    box-shadow: 0px 0px 10px 0.02px white;
-    background-color: rgb(0, 66, 94);
-    border: 1px solid white;
-    border-radius: 10px;
-    font-size: 1.65rem;
-    width: 125px;
-    height: 35px;
-    cursor: pointer;
-    outline: none;
     font-weight: bold;
-    font-family: 'Lato', sans-serif;
-}
-.contact-button:hover{
-    transform: scale(1.1);
 }
 
 
@@ -327,40 +211,38 @@ body{
 footer{
     display: flex;
     flex-direction: column;
-    align-items: center;
-    width: 100%;
-    height: 200px;
+    height: auto;
     background-color: rgb(0, 66, 94);
 }
 .redes{
     display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 80%;
-    height: 40%;
-    margin: 0 auto;
-}
-.redes img{
-    margin-top: 20px;
-    width: 50px;
-    height: 50px;
-}
-.logo{
-    display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 80%;
-    height: 60%;
-    margin: 0 auto;
+}
+.redes p{
+    font-size: 1.4rem;
+    margin: 25px 0 10px;
+}
+.redes img{
+    width: 80px;
+    height: 80px;
+    cursor: pointer;
+}
 
+
+
+
+.logo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 25px 0;
 }
 .logo img{
-    margin-top: 20px;
-    width: 150px;
+    width: 200px;
     height: auto;
 }
 .logo p{
-    color: white;
     font-size: 1.2rem;
 }
