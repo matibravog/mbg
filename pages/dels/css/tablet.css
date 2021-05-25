@@ -1,18 +1,10 @@
+.fotos {
+    width: 90%;
+    height: auto;
+    margin: 100px auto;
 
-.portafolio-item {
-    justify-content: space-evenly;
+}
+.fotos img{
     width: 30%;
-    margin: 2% 2% 4%;
-}
-.section-container h2{
-    font-size: 2rem;
-}
-.item-icon{
-    width: 8px;
-    height: 8px;
-    transform: translate(-65px, 8px);
-}
-.item-text {
-    transform: translate(-35px, 4px);
-    font-size: 1.2rem;
+    margin: 10px 10px;
 }
